@@ -60,7 +60,7 @@ module Fastlane
 
 
         #VersionBox External API Base
-        API_BASE="http://versionbox.io/api/e/v1"
+        api_base="http://versionbox.io/api/e/v1"
 
 
         #Start Upload
@@ -76,7 +76,7 @@ module Fastlane
         #
 
         #Upload with CURL
-        sent=%x"curl -s -F 'file=@#{file_path}' -F app_key=#{app_key} -F api_token=#{api_token} -F version_description='#{description}' #{API_BASE}/UploadVersion"
+        sent=%x"curl -s -F 'file=@#{file_path}' -F app_key=#{app_key} -F api_token=#{api_token} -F version_description='#{description}' #{api_base}/UploadVersion"
         
         #Get response as JSON
         data=JSON.parse(sent)
