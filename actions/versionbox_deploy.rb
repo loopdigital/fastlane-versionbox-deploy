@@ -60,7 +60,7 @@ module Fastlane
 
 
         #VersionBox External API Base
-        API_BASE="http://api.dev.dijitalgaraj.com/api/e/v1"
+        API_BASE="http://versionbox.io/api/e/v1"
 
 
         #Start Upload
